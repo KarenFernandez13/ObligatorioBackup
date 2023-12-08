@@ -11,26 +11,46 @@
         <div class="col-lg-12">
             <h3>Clientes</h3>
         </div>
-    </div>     
+    </div>
     <br />
     <div class=" row">
         <div class="col-lg-8">
             <asp:TextBox ID="txtNombre" runat="server" CssClass="form-control" placeholder="Nombre"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="rfvNombre" runat="server"
+                ControlToValidate="txtNombre"
+                ErrorMessage="El campo Nombre es obligatorio."
+                Display="Dynamic">
+            </asp:RequiredFieldValidator>
         </div>
     </div>
     <div class=" row">
         <div class="col-lg-8">
             <asp:TextBox ID="txtApellido" runat="server" CssClass="form-control" placeholder="Apellido"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="rflApellido" runat="server"
+                ControlToValidate="txtApellido"
+                ErrorMessage="El campo Apellido es obligatorio."
+                Display="Dynamic">
+</asp:RequiredFieldValidator>
         </div>
     </div>
     <div class=" row">
         <div class="col-lg-8">
-            <asp:TextBox ID="txtDocumento" runat="server" CssClass="form-control" placeholder="Documento"></asp:TextBox>
+            <asp:TextBox ID="txtDocumento" runat="server" TextMode="Number" CssClass="form-control" placeholder="Documento"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="rfvDocumento" runat="server"
+                ControlToValidate="txtDocumento"
+                ErrorMessage="El campo Documento es obligatorio."
+                Display="Dynamic">
+</asp:RequiredFieldValidator>
         </div>
     </div>
     <div class=" row">
         <div class="col-lg-8">
-            <asp:TextBox ID="txtTelefono" runat="server" CssClass="form-control" placeholder="Teléfono"></asp:TextBox>
+            <asp:TextBox ID="txtTelefono" runat="server" TextMode="Number" CssClass="form-control" placeholder="Teléfono"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="rflTelefono" runat="server"
+                ControlToValidate="txtTelefono"
+                ErrorMessage="El campo Telefono es obligatorio."
+                Display="Dynamic">
+</asp:RequiredFieldValidator>
         </div>
     </div>
     <div class=" row">
@@ -58,7 +78,7 @@
                 OnRowEditing="gvClientes_RowEditing"
                 OnRowUpdating="gvClientes_RowUpdating"
                 AutoGenerateColumns="false"
-                DataKeyNames="Documento">
+                DataKeyNames="Documento" OnSelectedIndexChanged="gvClientes_SelectedIndexChanged">
                 <Columns>
                     <asp:TemplateField HeaderText="Documento">
                         <ItemTemplate>
@@ -106,7 +126,7 @@
                     </asp:TemplateField>
 
 
-                    <asp:CommandField ButtonType="Link" ShowEditButton="true" ShowDeleteButton="true" />
+                    <asp:CommandField ButtonType="Link" ShowEditButton="true" ShowDeleteButton="true"  CausesValidation="false" />
                 </Columns>
 
             </asp:GridView>

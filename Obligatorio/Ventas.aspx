@@ -15,7 +15,7 @@
        <br />
     <div class=" row">
     <div class="col-lg-6">
-        <asp:TextBox ID="txtBuscar" runat="server" CssClass="form-control" placeholder="Buscar cliente por documento" OnTextChanged="txtBuscar_TextChanged"></asp:TextBox>
+        <asp:TextBox ID="txtBuscar" runat="server" CssClass="form-control" TextMode="Number" placeholder="Buscar cliente por documento" OnTextChanged="txtBuscar_TextChanged"></asp:TextBox>
     </div>
 </div>
    <div class="row">

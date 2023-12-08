@@ -40,11 +40,21 @@
     <div class=" row">
         <div class="col-lg-8">
             <asp:TextBox ID="TxtMarca" runat="server" CssClass="form-control" placeholder="Marca"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="rflMarca" runat="server"
+                ControlToValidate="txtMarca"
+                ErrorMessage="Marca requerida"
+                Display="Dynamic">
+            </asp:RequiredFieldValidator>
         </div>
     </div>
     <div class=" row">
         <div class="col-lg-8">
             <asp:TextBox ID="TxtModelo" runat="server" CssClass="form-control" placeholder="Modelo"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="rflModelo" runat="server"
+                ControlToValidate="txtModelo"
+                ErrorMessage="Modelo requerido"
+                Display="Dynamic">
+            </asp:RequiredFieldValidator>
         </div>
     </div>
 
@@ -152,7 +162,7 @@
                 OnRowEditing="gvVehiculos_RowEditing"
                 OnRowUpdating="gvVehiculos_RowUpdating"
                 AutoGenerateColumns="false"
-                DataKeyNames="Matricula" >
+                DataKeyNames="Matricula">
                 <Columns>
                     <asp:TemplateField HeaderText="Matricula">
                         <ItemTemplate>
@@ -229,7 +239,7 @@
                     <asp:TemplateField HeaderText="Campo especial">
                         <ItemTemplate>
                             <asp:Label ID="lbl10" runat="server" Text='<%# Bind("CampoEspecial") %>'></asp:Label>
-                        </ItemTemplate>                       
+                        </ItemTemplate>
                     </asp:TemplateField>
 
                     <asp:TemplateField HeaderText="ImagenUno">

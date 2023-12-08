@@ -24,30 +24,31 @@
     </div>
     <div class=" row">
         <div class="col-lg-8">
-            <asp:Button ID="btnVV" runat="server" CssClass="btn btn-primary" Text="Ver ventas por vendedor" OnClick="btnVV_Click" />
+            <asp:Button ID="btnVerAlquileres" runat="server" CssClass="btn btn-primary" Text="Ver listado de Alquileres" OnClick="btnVerAlquileres_Click" />
         </div>
     </div>
     <div class=" row">
         <div class="col-lg-8">
-            <asp:Button ID="btnVerAlquileres" runat="server" CssClass="btn btn-primary" Text="Ver listado de Alquileres" OnClick="btnVerAlquileres_Click" />
+            <asp:Button ID="btnVV" runat="server" CssClass="btn btn-primary" Text="Ver ventas por vendedor" OnClick="btnVV_Click" />
         </div>
     </div>
+
     <br />
     <br />
     <div class=" row">
         <div class="col-lg-6">
-            <asp:TextBox ID="txtBuscar" runat="server" CssClass="form-control" visible="false" placeholder="Buscar" OnTextChanged="txtBuscar_TextChanged"></asp:TextBox>
+            <asp:TextBox ID="txtBuscar" runat="server" CssClass="form-control" Visible="false" placeholder="Buscar" OnTextChanged="txtBuscar_TextChanged"></asp:TextBox>
         </div>
     </div>
     <div class="row">
         <div class="col-lg-4">
-            <button id="btnBuscar" runat="server" cssclass="btn btn-primary" visible="false" OnClick="btnBuscar_Click">Buscar</button>
+            <button id="btnBuscar" runat="server" cssclass="btn btn-primary" visible="false" onclick="btnBuscar_Click">Buscar</button>
         </div>
     </div>
     <div class=" row">
         <div class="col-lg-8">
             Vendedores
-         <asp:ListBox ID="lstUsuarios" runat="server" visible="false" CssClass="form-control" OnSelectedIndexChanged="lstUsuarios_SelectedIndexChanged"></asp:ListBox>
+         <asp:ListBox ID="lstUsuarios" runat="server" Visible="false" CssClass="form-control" OnSelectedIndexChanged="lstUsuarios_SelectedIndexChanged"></asp:ListBox>
         </div>
     </div>
     <br />

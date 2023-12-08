@@ -15,13 +15,12 @@ namespace Obligatorio
         public string Matricula { get; set; }   
         public string NombreUsuario { get; set; }
         public int Precio { get; set; }
-        public bool Devuelto {  get; set; }
-        
+        public bool Devuelto {  get; set; }        
         public int NumeroAlquiler {  get; set; }      
 
-
         public Alquiler() { }  
-        public Alquiler(int CantidadDias, DateTime FechaRetiro, string Cedula, string Matricula, string NombreUsuario, int Precio, bool Devuelto)
+        public Alquiler(int CantidadDias, DateTime FechaRetiro, string Cedula, string Matricula, 
+            string NombreUsuario, int Precio, bool Devuelto)
         {
             this.CantidadDias = CantidadDias;
             this.FechaRetiro = FechaRetiro;

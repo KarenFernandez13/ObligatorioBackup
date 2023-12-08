@@ -52,8 +52,7 @@ namespace Obligatorio
 
             this.gvVentas.EditIndex = -1;
             this.gvVentas.DataSource = BaseDeDatos.ListaVentas;
-            this.gvVentas.DataBind();
-            
+            this.gvVentas.DataBind();            
         }
 
         protected void btnVolver_Click(object sender, EventArgs e)

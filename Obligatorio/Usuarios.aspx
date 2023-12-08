@@ -41,6 +41,11 @@
     <div class=" row">
         <div class="col-lg-8">
             <asp:TextBox ID="txtApellido" runat="server" CssClass="form-control" placeholder="Apellido"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="rflApellido" runat="server"
+                ControlToValidate="txtApellido"
+                ErrorMessage="El campo Apellido es obligatorio."
+                Display="Dynamic">
+</asp:RequiredFieldValidator>
         </div>
     </div>
     <div class=" row">
@@ -125,7 +130,7 @@
                     <asp:TemplateField HeaderText="Tipo">
                         <ItemTemplate>
                             <asp:Label ID="lbl6" runat="server" Text='<%# Bind("Tipo") %>'></asp:Label>
-                        </ItemTemplate>                        
+                        </ItemTemplate>
                     </asp:TemplateField>
 
                     <asp:CommandField ButtonType="Link" ShowEditButton="true" ShowDeleteButton="true" CausesValidation="false" />

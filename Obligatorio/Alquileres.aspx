@@ -15,7 +15,7 @@
     <br />
      <div class=" row">
      <div class="col-lg-6">
-         <asp:TextBox ID="txtBuscar" runat="server" CssClass="form-control" placeholder="Buscar" OnTextChanged="txtBuscar_TextChanged"></asp:TextBox>
+         <asp:TextBox ID="txtBuscar" runat="server" CssClass="form-control" TextMode="Number" placeholder="Buscar" OnTextChanged="txtBuscar_TextChanged"></asp:TextBox>
      </div>
  </div>
     <div class="row">
@@ -63,7 +63,7 @@
     </div>
     <div class=" row">
         <div class="col-lg-6">
-            <asp:TextBox ID="txtDias" runat="server" CssClass="form-control" placeholder="Cantidad de dias" OnTextChanged="txtDias_TextChanged"></asp:TextBox>
+            <asp:TextBox ID="txtDias" runat="server" CssClass="form-control" TextMode="Number" placeholder="Cantidad de dias" OnTextChanged="txtDias_TextChanged"></asp:TextBox>
         </div>
     </div>
 
