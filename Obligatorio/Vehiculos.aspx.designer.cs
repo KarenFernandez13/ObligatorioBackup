@@ -60,6 +60,15 @@ namespace Obligatorio
         protected global::System.Web.UI.WebControls.TextBox TxtMarca;
 
         /// <summary>
+        /// Control rflMarca.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rflMarca;
+
+        /// <summary>
         /// Control TxtModelo.
         /// </summary>
         /// <remarks>
@@ -67,6 +76,15 @@ namespace Obligatorio
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TxtModelo;
+
+        /// <summary>
+        /// Control rflModelo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rflModelo;
 
         /// <summary>
         /// Control TxtAño.

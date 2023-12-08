@@ -33,15 +33,6 @@ namespace Obligatorio
         protected global::System.Web.UI.WebControls.Button btnVerVentas;
 
         /// <summary>
-        /// Control btnVV.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnVV;
-
-        /// <summary>
         /// Control btnVerAlquileres.
         /// </summary>
         /// <remarks>
@@ -49,6 +40,15 @@ namespace Obligatorio
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnVerAlquileres;
+
+        /// <summary>
+        /// Control btnVV.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnVV;
 
         /// <summary>
         /// Control txtBuscar.

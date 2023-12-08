@@ -119,8 +119,7 @@ namespace Obligatorio
                     this.gvUsuarios.DataSource = BaseDeDatos.ListaUsuarios;
                     this.gvUsuarios.DataBind();
                 }
-            }
-           
+            }           
         } 
         
         protected bool ValidarUsuario(string documento)

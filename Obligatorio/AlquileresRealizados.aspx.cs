@@ -68,7 +68,6 @@ namespace Obligatorio
 
             foreach (var alquiler in BaseDeDatos.ListaAlquileres)
             {
-                // matricula es el DataKeyNames, esto hay que cambiarlo por un identificador unico
                 if (alquiler.NumeroAlquiler.ToString() == NumAlquiler)
                 {
                     alquiler.Devuelto = devuelto;
